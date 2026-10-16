@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inquire | KMC Marine Scales</title>
+<meta name="description" content="Inquire about marine scale refurbishment, repair, calibration, sales, and service.">
+<link rel="canonical" href="https://timetoenter61-lab.github.io/marine-scales/inquire.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--navy: #0b2433;
+--ink: #13242d;
+--rust: #d56f3e;
+--mist: #edf2f1;
+--line: #d4dedc;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--mist); font-family: Manrope, sans-serif; }
+a { color: inherit; }
+
+header {
+background: var(--navy);
+position: sticky;
+top: 0;
+z-index: 10;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+padding: 1.25rem clamp(1.25rem, 5vw, 5rem);
+color: white;
+border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.brand { font: 800 1.4rem/1 Barlow Condensed, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; }
+.brand span { color: #f4a06d; }
+nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 1.4rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+nav a { padding: 0.45rem 0; text-decoration: none; }
+nav a:hover, nav a.active { color: #f4a06d; }
+
+.page-header {
+background: var(--navy);
+color: white;
+padding: 4rem clamp(1.25rem, 5vw, 5rem) 3rem;
+border-bottom: 4px solid var(--rust);
+}
+
+.eyebrow { margin: 0 0 0.5rem; color: #f4a06d; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+h1 { margin: 0 0 1rem; font: 800 clamp(2.5rem, 5vw, 4.5rem)/0.9 Barlow Condensed, sans-serif; letter-spacing: 0; text-transform: uppercase; }
+.page-header p { max-width: 600px; margin: 0; color: #e2eceb; font-size: 1.1rem; line-height: 1.6; }
+
+.container {
+max-width: 1100px;
+margin: 3rem auto;
+padding: 0 1.25rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+}
+
+.form-card {
+background: white;
+padding: 2.5rem;
+border-top: 4px solid var(--rust);
+box-shadow: 0 10px 30px rgba(11,36,51,0.08);
+}
+
+.form-card h2 {
+margin: 0 0 1.5rem;
+font: 700 1.8rem/1 Barlow Condensed, sans-serif;
+text-transform: uppercase;
+color: var(--navy);
+}
+
+.form-group {
+margin-bottom: 1.25rem;
+}
+
+.form-group label {
+display: block;
+font-size: 0.85rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+margin-bottom: 0.4rem;
+color: var(--navy);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 0.8rem 1rem;
+border: 1px solid var(--line);
+background: #f9fbfb;
+font-family: inherit;
+font-size: 1rem;
+color: var(--ink);
+border-radius: 0;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+outline: none;
+border-color: var(--rust);
+background: white;
+}
+
+.button-submit {
+width: 100%;
+background: var(--rust);
+color: white;
+border: none;
+padding: 1rem 1.5rem;
+font-size: 1rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+cursor: pointer;
+transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button-submit:hover {
+background: #c25e2e;
+transform: translateY(-2px);
+}
+
+.form-success {
+margin-top: 1.5rem;
+padding: 1rem 1.25rem;
+background: #eaf7ec;
+border-left: 4px solid #2e7d32;
+color: #1f4d2f;
+font-weight: 700;
+line-height: 1.5;
+}
+
+.info-card {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.info-block {
+background: white;
+padding: 2rem;
+border-left: 4px solid var(--navy);
+box-shadow: 0 10px 30px rgba(11,36,51,0.08);
+}
+
+.info-block h3 {
+margin: 0 0 0.8rem;
+font: 700 1.4rem/1 Barlow Condensed, sans-serif;
+text-transform: uppercase;
+color: var(--navy);
+}
+
+.info-block p {
+margin: 0 0 0.5rem;
+color: #58686c;
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.info-block p:last-child { margin-bottom: 0; }
+
+footer {
+margin-top: 4rem;
+padding: 2rem 1.25rem;
+background: var(--navy);
+color: #cfdddc;
+text-align: center;
+font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+header { position: relative; align-items: flex-start; flex-direction: column; }
+nav { justify-content: flex-start; gap: 0.8rem 1rem; }
+.container { grid-template-columns: 1fr; gap: 2rem; margin: 2rem auto; }
+.form-card { padding: 1.5rem; }
+}
+
+@media (max-width: 400px) {
+.page-header { padding: 3rem 1rem 2rem; }
+.container { padding: 0 1rem; }
+.form-card, .info-block { padding: 1.25rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">KMC <span>Marine Scales</span></a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="catalogue.html">Equipment Catalogue</a>
+<a href="inquire.html" class="active">Inquire</a>
+</nav>
+</header>
+
+<main>
+<section class="page-header">
+<p class="eyebrow">Get in touch</p>
+<h1>Inquire & Support</h1>
+<p>Contact KMC Marine Scales for refurbishments, repairs, calibrations, sales, or field service requests :-0455345728 during office hours</p>
+</section>
+
+<div class="container">
+<section class="form-card">
+<h2>Send an Inquiry</h2>
+<form action="https://formspree.io/f/xqpklnqv" method="POST">
+<input type="hidden" name="_subject" value="New KMC Marine Scales Inquiry">
+<div class="form-group">
+<label for="name">Full Name *</label>
+<input type="text" id="name" name="name" required placeholder="John Doe">
+</div>
+
+<div class="form-group">
+<label for="email">Email Address *</label>
+<input type="email" id="email" name="email" required placeholder="john@example.com">
+</div>
+
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="0400 000 000">
+</div>
+
+<div class="form-group">
+<label for="service">Service Required *</label>
+<select id="service" name="service" required>
+<option value="">-- Select a Service --</option>
+<option value="refurbishment">Marine Scale Refurbishment</option>
+<option value="repair">Repair & Maintenance</option>
+<option value="calibration">Calibration Services</option>
+<option value="sales">Sales (New / Second Hand)</option>
+<option value="field-service">Field Service & Support</option>
+<option value="other">Other Inquiry</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="message">Message / Details *</label>
+<textarea id="message" name="message" rows="5" required placeholder="Please describe your scale requirements, vessel type, or service needs..."></textarea>
+</div>
+
+<button type="submit" class="button-submit">Submit Inquiry</button>
+</form>
+
+<div id="form-success" class="form-success" hidden>
+Thank you for your inquiry. Your message has been sent successfully and we will be in touch soon.
+</div>
+</section>
+
+<div class="info-card">
+<div class="info-block">
+<h3>Direct Contact</h3>
+<p><strong>Phone:</strong> Contact KMC Support</p>
+<p><strong>Services:</strong> Marine scale refurbishment, repairs, sales, and on-site field support across Australia.</p>
+</div>
+
+<div class="info-block">
+<h3>Service Areas</h3>
+<p>Operating Australia-wide for working fleets, commercial fishing, wharves, and heavy marine industry.</p>
+</div>
+
+<div class="info-block">
+<h3>Equipment & Spares</h3>
+<p>Looking for specific marine scale components, indicators, or load cells? Browse our <a href="catalogue.html" style="color: var(--rust); font-weight: 700;">Equipment Catalogue</a>.</p>
+</div>
+</div>
+</div>
+</main>
+
+<footer>
+&copy; KMC Marine Scales. All rights reserved.
+</footer>
+
+<script>
+const inquiryForm = document.querySelector('form');
+const successMessage = document.getElementById('form-success');
+
+if (inquiryForm && successMessage) {
+  inquiryForm.addEventListener('submit', function () {
+    inquiryForm.style.display = 'none';
+    successMessage.hidden = false;
+  });
+}
+</script>
+</body>
+</html>

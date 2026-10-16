@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Catalogue | KMC Marine Scales</title>
+    <meta name="description" content="Explore marine scale load cells, indicators, and stainless steel weighing bases from KMC Marine Scales.">
+    <link rel="canonical" href="https://timetoenter61-lab.github.io/marine-scales/catalogue.html">
+    <style>
+        /* INDUSTRIAL WORKBENCH DESIGN SYSTEM */
+        :root {
+            --steel-dark: #1E2229;
+            --steel-medium: #2A303C;
+            --steel-light: #F4F5F7;
+            --industrial-yellow: #FFB300;
+            --hazard-black: #111111;
+            --safety-red: #D32F2F;
+            --text-dark: #212529;
+            --text-light: #FFFFFF;
+            --border-muted: #D1D5DB;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--steel-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION BAR */
+        header {
+            background-color: var(--steel-dark);
+            color: var(--text-light);
+            padding: 1.5rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem 2rem;
+            border-bottom: 4px solid var(--industrial-yellow);
+        }
+
+        .logo-area h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo-area span {
+            color: var(--industrial-yellow);
+        }
+
+        nav a {
+            display: inline-block;
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 0;
+            padding: 0.4rem 0;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.25rem;
+        }
+
+        nav a:hover {
+            color: var(--industrial-yellow);
+        }
+
+        /* HAZARD PATTERN BAR */
+        .hazard-bar {
+            height: 12px;
+            background: repeating-linear-gradient(
+                -45deg,
+                var(--industrial-yellow),
+                var(--industrial-yellow) 10px,
+                var(--hazard-black) 10px,
+                var(--hazard-black) 20px
+            );
+            width: 100%;
+        }
+
+        /* MAIN WRAPPER */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            border-left: 6px solid var(--industrial-yellow);
+            padding-left: 0.75rem;
+            margin-bottom: 2rem;
+            color: var(--steel-dark);
+            letter-spacing: -0.5px;
+        }
+
+        /* TWO-COLUMN GRID FOR BOOKING & CONTACT */
+        .portal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .portal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* INDUSTRIAL CARD ARCHITECTURE */
+        .industrial-card {
+            background: #FFFFFF;
+            border: 2px solid var(--steel-dark);
+            box-shadow: 4px 4px 0px 0px var(--steel-dark);
+            padding: 2rem;
+            position: relative;
+        }
+
+        .card-header-badge {
+            background-color: var(--steel-dark);
+            color: var(--industrial-yellow);
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        /* FORMS & INPUTS */
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--steel-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border-muted);
+            background-color: #FAFAFA;
+            font-size: 1rem;
+            color: var(--steel-dark);
+            transition: border-color 0.2s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--steel-dark);
+            background-color: #FFFFFF;
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%231E2229' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1rem;
+            padding-right: 2.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* BUTTONS */
+        .btn-industrial {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--industrial-yellow);
+            color: var(--hazard-black);
+            border: 2px solid var(--steel-dark);
+            padding: 0.9rem;
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.15s ease;
+            box-shadow: 3px 3px 0px 0px var(--steel-dark);
+        }
+
+        .btn-industrial:hover {
+            background-color: var(--steel-dark);
+            color: var(--industrial-yellow);
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px 0px var(--steel-dark);
+        }
+
+        /* HARDWARE CATALOG BLOCK */
+        .catalog-section {
+            margin-bottom: 4rem;
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        @media (max-width: 1100px) {
+            .catalog-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 760px) {
+            .catalog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 1.25rem;
+            }
+
+            .logo-area h1 {
+                font-size: 1.25rem;
+            }
+
+            .container {
+                margin: 1.5rem auto;
+                padding: 0 1rem;
+            }
+
+            .section-title {
+                font-size: clamp(1.5rem, 7vw, 2rem);
+                overflow-wrap: anywhere;
+            }
+
+            .industrial-card {
+                padding: 1.25rem;
+            }
+        }
+
+        .product-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border-muted);
+            border-top: 4px solid var(--steel-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .product-image {
+            background-color: #E5E7EB;
+            height: 180px;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-muted);
+            position: relative;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--border-muted);
+            border-radius: 50%;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: saturate(0.8) contrast(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.03);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-sku {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--steel-dark);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: #4B5563;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .product-specs {
+            background-color: var(--steel-light);
+            padding: 0.75rem;
+            border-radius: 2px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--steel-medium);
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.25rem;
+        }
+
+        .spec-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: #6B7280;
+        }
+
+        .spec-value {
+            font-weight: 700;
+            color: var(--steel-dark);
+        }
+
+        .btn-catalog {
+            background-color: var(--steel-medium);
+            color: var(--text-light);
+            border: none;
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-catalog:hover {
+            background-color: var(--steel-dark);
+            color: var(--industrial-yellow);
+        }
+
+        /* EMERGENCY ALERT FOOTER BANNER */
+        .emergency-banner {
+            background-color: var(--safety-red);
+            color: var(--text-light);
+            padding: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid var(--hazard-black);
+            margin-bottom: 4rem;
+        }
+
+        .emergency-banner span {
+            background-color: var(--hazard-black);
+            color: var(--text-light);
+            padding: 0.25rem 0.5rem;
+            margin-right: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--steel-dark);
+            color: #9CA3AF;
+            padding: 3rem 2rem;
+            font-size: 0.85rem;
+            border-top: 4px solid var(--steel-medium);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--text-light);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0 auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid #374151;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV HEADER -->
+    <header>
+        <div class="logo-area">
+            <h1>AUSTRALIAN <span>MARINE </span>SCALES</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="catalogue.html">Equipment Catalogue</a>
+            <a href="inquire.html">Inquire</a>
+        </nav>
+    </header>
+
+    <!-- HAZARD VISUAL ACCENT -->
+    <div class="hazard-bar"></div>
+
+    <div class="container">
+
+        <!-- EMERGENCY SERVICE ACCESS -->
+        <div class="emergency-banner">
+            <span>Field Support</span> 24/7 Marine Service Hotline: 0455 345 728
+        </div>
+
+        <!-- HARDWARE CATALOG BLOCK -->
+        <div id="hardware" class="catalog-section">
+            <h2 class="section-title">Hardware & Instrumentation Catalog</h2>
+            
+            <div class="catalog-grid">
+                
+                <!-- PRODUCT 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="SinglePoint.png" alt="Single-point marine scale load cell" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-sku">Single point stainless steel load cells</div>
+                        <div class="product-title">Hermetic sealed load cell</div>
+                        <div class="product-desc">KMC modular Load Cell for marine weighing applications.</div>
+                        <div class="product-specs">
+                            <div class="spec-item"><span class="spec-label">Capacity:</span><span class="spec-value">500 kg</span></div>
+                            <div class="spec-item"><span class="spec-label">Protection:</span><span class="spec-value">IP69K Dual-Seal</span></div>
+                        </div>
+                        <a href="inquire.html" class="btn-catalog">Technical Spec Sheet Available</a>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="marel.png" alt="Marel Headwork scale" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-sku">Marel indicator</div>
+                        <div class="product-title">Marel replacement indicator</div>
+                        <div class="product-desc">KMC supplies refurbished Marel indicators.</div>
+                        <div class="product-specs">
+                            <div class="spec-item"><span class="spec-label">Outputs:</span><span class="spec-value">Serial RS232</span></div>
+                            <div class="spec-item"><span class="spec-label">Enclosure:</span><span class="spec-value">Stainless Steel</span></div>
+                        </div>
+                        <a href="inquire.html" class="btn-catalog">Technical Spec Sheet Available</a>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Sizedbase.png" alt="Sized base scale" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-sku">SKU: Rugged base </div>
+                        <div class="product-title">Larger bases for fish bins</div>
+                        <div class="product-desc">Marine stainless bases for fish bins up to 500/500mm.</div>
+                        <div class="product-specs">
+                            <div class="spec-item"><span class="spec-label">Height: low profile </span><span class="spec-value">80 to 100mm</span></div>
+                            <div class="spec-item"><span class="spec-label">Stainless Steel:</span><span class="spec-value">Full washdown IP67  </span></div>
+                        </div>
+                        <a href="inquire.html" class="btn-catalog">Technical Spec Sheet Available</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>KMC Marine Scales</h4>
+                <p>Marine weighing equipment, refurbishment, calibration, and field support for working fleets and wharf operations.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Compliance Standards</h4>
+                <p>All service frameworks conform to National Measurement Institute (NMI) commercial trade guidelines.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 KMC Marine Scales. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
